@@ -6,8 +6,10 @@
   :root {
     --radius: 0.5rem;
     /* Colors from tailwind.config.ts */
-    --color-primary-100: #FFE8F0;
-    --color-primary: #EE2B69;
+    --color-primary-100: #b0deff;
+    --color-primary: rgb(72, 136, 210);
+    /*#EE2B69*/
+    ;
     --color-secondary: #FBE843;
     --color-black-100: #333333;
     --color-black-200: #141413;
@@ -24,7 +26,7 @@
     /* Box shadow */
     --shadow-100: 2px 2px 0px 0px rgb(0, 0, 0);
     --shadow-200: 2px 2px 0px 2px rgb(0, 0, 0);
-    --shadow-300: 2px 2px 0px 2px rgb(238, 43, 105);
+    --shadow-300: 2px 2px 0px 2px rgb(72, 136, 210);
   }
 }
 
