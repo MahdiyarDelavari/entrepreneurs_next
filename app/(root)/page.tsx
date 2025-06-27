@@ -14,7 +14,7 @@ export default async function Home({ searchParams }: {
       author: { _id: 1 , name:"Mahdiyar"},
       _id: 1,
       description: "This Is Description",
-      image: "@/public/posts-imgs/img-1.webp",
+      image: "/posts-imgs/img-1.webp",
       category: "Robots",
       title: "We Robots"
     },
@@ -42,7 +42,7 @@ export default async function Home({ searchParams }: {
           {query ? `Search Results For "${query}"` : "All Startups"}
         </p>
 
-        <ul className="mt-7 card-grid">
+        <ul className="mt-7 card_grid">
           {posts?.length > 0 ? (
             posts.map((post:startupCardType) => (
               <StartupCard key={post?._id} post={post} />
