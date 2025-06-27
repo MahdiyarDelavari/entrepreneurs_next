@@ -204,17 +204,17 @@
     color: color-mix(in srgb, var(--color-white-100) 80%, transparent);
   }
 
-  .pink_container {
+  .blue_container {
     width: 100%;
     background-color: rgb(6, 53, 105);
     min-height: 530px;
     @apply flex justify-center items-center flex-col;
     background-image: linear-gradient(to right,
-        transparent 49.5%,
-        rgba(251, 232, 67, 0.2) 49.5%,
-        rgba(0, 183, 255, 0.6) 50.5%,
+        transparent 42%,
+        rgba(255, 255, 255, 0.4) 49.5%,
+        rgba(255, 255, 255, 0.4) 50.5%,
         transparent 50.5%);
-    background-size: 5% 100%;
+    background-size: 1.25% 100%;
     background-position: center;
     background-repeat: repeat-x;
   }
@@ -250,8 +250,8 @@
   }
 
   .sub-heading {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 21px;
+    font-weight: 600;
     color: var(--color-white);
     max-width: 672px;
     text-align: center;
