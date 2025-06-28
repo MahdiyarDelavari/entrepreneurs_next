@@ -65,5 +65,5 @@ module.exports = {
         },
       },
     },
-    plugins: [require("tailwindcss-animate")], // Required for shadcn/ui animations
+    plugins: [require('@tailwindcss/typography')], // Required for shadcn/ui animations
   };

@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
+@plugin "@tailwindcss/typography";
 
 @layer base {
   :root {
@@ -223,13 +223,12 @@
 
   .tag {
     background-color: var(--color-secondary);
-    padding: 12px 24px;
     font-family: var(--font-work-sans);
     font-weight: 700;
     border-radius: var(--radius-sm);
     text-transform: uppercase;
     position: relative;
-
+    @apply px-6 py-3 before:content-[''] before:absolute before:top-2 before:left-2 before:border-t-[10px] before:border-t-black before:border-r-[10px] before:border-r-transparent after:content-[''] after:absolute after:bottom-2 after:right-2 after:border-b-[10px] after:border-b-black after:border-l-[10px] after:border-l-transparent;
   }
 
   .heading {
@@ -261,10 +260,8 @@
   }
 
   .section_container {
-    padding: 40px 24px;
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
+
+    @apply px-6 py-10 max-w-7xl mx-auto;
   }
 
   .card_grid {
@@ -624,10 +621,11 @@
   .view-text {
     font-size: 16px;
     font-weight: 500;
-    background-color: var(--color-primary-100);
+    background-color: rgb(48, 103, 167);
     padding: 8px 16px;
     border-radius: 8px;
     text-transform: capitalize;
+
   }
 
   .category-tag {

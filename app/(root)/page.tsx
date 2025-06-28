@@ -1,5 +1,7 @@
 import SearchForm from "@/components/SearchForm";
 import StartupCard from "@/components/StartupCard";
+import { posts } from "@/public/posts";
+
 
 export default async function Home({ searchParams }: {
   searchParams: Promise<{ query?: string }>
@@ -7,19 +9,7 @@ export default async function Home({ searchParams }: {
 
   const query = (await searchParams).query
 
-  const posts = [
-    {
-      _createdAt: Date.now(),
-      views: 55,
-      author: { _id: 1 , name:"Mahdiyar"},
-      _id: 1,
-      description: "This Is Description",
-      image: "/posts-imgs/img-1.webp",
-      category: "Robots",
-      title: "We Robots"
-    },
-
-  ];
+  
 
   return (
     <>
