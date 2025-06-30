@@ -28,9 +28,8 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
               <p className="sub-heading !max-w-5xl">{post.description}</p>
           </section>
 
-          <section className='bg-blue-100'>
+          <section className='section_container'>
               
-          <div className='section_container'>
               
                   
               <img src={post.image} alt="thumbnail" className='w-full h-auto rounded-xl' />
@@ -62,7 +61,7 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
               <Suspense fallback={<Skeleton className="view_skeleton" />} >
                   <View id={id}/>
               </Suspense>
-          </div>
+
             </section>
               
                   
