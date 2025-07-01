@@ -269,11 +269,11 @@
     gap: 20px;
 
     @media (min-width: 640px) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 300px);
     }
 
     @media (min-width: 768px) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 300px);
     }
   }
 

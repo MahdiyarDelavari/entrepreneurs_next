@@ -11,6 +11,7 @@ import { formSchema } from '@/lib/validation';
 import z from 'zod'
 import {useToast} from "@/hooks/use-toast"
 import { useRouter } from 'next/navigation';
+import { createPitch } from '@/lib/actions';
 
 const StartupForm = () => {
     const [errors, setErrors] = useState<Record<string, string>>({})
@@ -31,7 +32,7 @@ const StartupForm = () => {
             }
             await formSchema.parseAsync(formValue)
             
-            //const result = await createIdea(prevState,FormData,pitch)
+            const result = await createPitch(prevState,formData,pitch)
 
 
             if (result.status == 'SUCCESS') {
@@ -42,7 +43,7 @@ const StartupForm = () => {
                     variant:"destructive"
                 })
 
-                router.push(`startup/${result.id}`)
+                router.push(`http://localhost:3000/startup/${result.id}`)
 
             }
 

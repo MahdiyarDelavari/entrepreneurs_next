@@ -9,3 +9,8 @@ export function formatDate(date: string | number) {
     return new Date(date).toLocaleDateString('en-us',{month:'long' , day:'numeric' , year:"numeric"})
     
 }
+
+
+export function parseServerActionResponse<T>(response: T) {
+    return JSON.parse(JSON.stringify(response))
+}
